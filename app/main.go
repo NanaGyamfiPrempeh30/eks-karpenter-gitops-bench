@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -31,9 +30,9 @@ func main() {
 	http.HandleFunc("/ready", readyHandler)
 	http.HandleFunc("/metrics", metricsHandler)
 
-	log.Printf("🚀 Server starting on port %s", port)
-	log.Printf("📍 Environment: %s | Version: %s", env, version)
-	log.Printf("🏗️  Architecture: %s | CPUs: %d", runtime.GOARCH, runtime.NumCPU())
+	log.Printf("Server starting on port %s", port)
+	log.Printf("Environment: %s | Version: %s", env, version)
+	log.Printf("Architecture: %s | CPUs: %d", runtime.GOARCH, runtime.NumCPU())
 
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Fatal(err)
@@ -71,7 +70,7 @@ func readyHandler(w http.ResponseWriter, r *http.Request) {
 func metricsHandler(w http.ResponseWriter, r *http.Request) {
 	var mem runtime.MemStats
 	runtime.ReadMemStats(&mem)
-	
+
 	response := map[string]interface{}{
 		"uptime_seconds": int64(time.Since(startTime).Seconds()),
 		"goroutines":     runtime.NumGoroutine(),
