@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gitops-bench-api
+  namespace: gitops-bench-dev
+  labels:
+    app: gitops-bench-api
+    environment: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitops-bench-api
+  template:
+    metadata:
+      labels:
+        app: gitops-bench-api
+        environment: dev
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/nanagyamfiprempeh30/eks-karpenter-gitops-bench:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ENVIRONMENT
+              value: "dev"
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "100m"
+              memory: "128Mi"
+          livenessProbe:
+            httpGet:
+              path: /live
+              port: 8080
+            initialDelaySeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 8080
+            initialDelaySeconds: 3

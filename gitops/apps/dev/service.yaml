@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gitops-bench-api
+  namespace: gitops-bench-dev
+  labels:
+    app: gitops-bench-api
+    environment: dev
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: gitops-bench-api
