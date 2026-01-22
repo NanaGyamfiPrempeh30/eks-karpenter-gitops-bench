@@ -5,7 +5,7 @@
 
 A production-grade Kubernetes platform demonstrating EKS with Karpenter autoscaling, ArgoCD GitOps deployments, and CI/CD pipeline benchmarking between Tenki Cloud and GitHub Actions.
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](docs/architecture-diagram-v3.html)
 
 ## Project Overview
 
