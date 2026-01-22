@@ -5,7 +5,7 @@
 
 A production-grade Kubernetes platform demonstrating EKS with Karpenter autoscaling, ArgoCD GitOps deployments, and CI/CD pipeline benchmarking between Tenki Cloud and GitHub Actions.
 
-![Architecture Diagram](docs/architecture-diagram-v3.html)
+![Architecture Diagram](docs/architecture-diagram.png)
 
 ## Project Overview
 
@@ -274,5 +274,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Yaw Nana Gyamfi Prempeh**
 - GitHub: [@NanaGyamfiPrempeh30](https://github.com/NanaGyamfiPrempeh30)
-- LinkedIn: [Yaw Nana Gyamfi Prempeh](www.linkedin.com/in/yaw-gyamfi-prempeh-4042a0129)
+- LinkedIn: [Yaw Nana Gyamfi Prempeh](https://www.linkedin.com/in/yaw-gyamfi-prempeh-4042a0129/)
 - Medium: [@yawgyamfiprempeh27](https://medium.com/@yawgyamfiprempeh27)
