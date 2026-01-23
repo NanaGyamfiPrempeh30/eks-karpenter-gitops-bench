@@ -258,7 +258,7 @@ terraform destroy
 ## Blog & Documentation
 
 - [Medium Article: EKS + Karpenter + ArgoCD: From Zero to Production GitOps](https://medium.com/@yawgyamfiprempeh27/eks-karpenter-argocd-from-zero-to-production-gitops-with-25-cheaper-ci-cd-pipelines-heres-8bd81d4d657b)
-- [LinkedIn Post with Tenki Cloud Review](https://linkedin.com/in/yaw-nana-gyamfi-prempeh)
+- [LinkedIn Post with Tenki Cloud Review](https://www.linkedin.com/posts/yaw-gyamfi-prempeh-4042a0129_marina-rivosecchi-asked-me-to-test-their-activity-7420386109093855232-PvR0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-LVEQBg0VdUfIlrKCSIJY2L5CtsXns5lM)
 
 ## Acknowledgments
 
